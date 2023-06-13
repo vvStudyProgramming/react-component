@@ -1,0 +1,69 @@
+/* 下拉选择组件 */
+
+.downSelection {
+  display: inline-flex;
+  flex-flow: column;
+  position: relative;
+}
+
+/* 选择展示区域 */
+/* ------------------------------------------------------------------------------ */
+.downSelection-text {
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px 0 5px 5px;
+  border-radius: 5px;
+  width: 240px;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+  flex-shrink: 0;
+  z-index: 11;
+  background-color: #fff;
+}
+/* 内容展示部分p的样式 */
+.downSelection-text > p {
+  padding: 0;
+  margin: 0 35px 0 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 图标展示样式 */
+.downSelection-text > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.3s;
+  right: 10px;
+}
+
+/* 成员展示区域 */
+/* ------------------------------------------------------------------------------ */
+.downSelection-const {
+  flex-shrink: 0;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 4px 0 0 0;
+  max-height: 120px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  transition: all 0.3s;
+  height: 0;
+  padding: 0;
+}
+
+.showConst {
+  height: auto;
+  padding: 5px 0;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  border: 1px solid #e4e7ed;
+}

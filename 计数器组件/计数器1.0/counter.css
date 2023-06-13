@@ -1,0 +1,33 @@
+/* 计数器组件 */
+.counter {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dddfe6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 中间 数字显示 */
+/* ------------------------------------------------------------------------------ */
+.counter-const {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+/* 用户输入框 */
+.counter-const-input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: '';
+}
+
+.counter-const-input-disabled {
+  cursor: not-allowed;
+  user-select: none;
+}

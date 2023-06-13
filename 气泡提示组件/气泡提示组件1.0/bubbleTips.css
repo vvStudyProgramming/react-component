@@ -1,0 +1,42 @@
+/* 气泡提示组件 */
+
+.bubbleTips {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+/* 上下显示时样式 */
+/* ================================================================ */
+.topAndBottom {
+  flex-direction: column;
+}
+/* 动画隐藏模式 */
+/* ================================================================ */
+.animationHide {
+  display: none;
+  opacity: 0;
+}
+/* 左边和右边展示时的样式 */
+.animationHideX {
+  transform: scaleX(0.8);
+}
+/* 上边和下边展示时的样式 */
+.animationHideY {
+  transform: scaleY(0.8);
+}
+
+/* 三角形 */
+/* ------------------------------------------------------------------------------ */
+.bubbleTips-triangle {
+  width: 0;
+  height: 0;
+}
+
+/* 内容区域 */
+/* ------------------------------------------------------------------------------ */
+.bubbleTips-const {
+  border-radius: 5px;
+  padding: 5px 3px;
+  text-align: center;
+}

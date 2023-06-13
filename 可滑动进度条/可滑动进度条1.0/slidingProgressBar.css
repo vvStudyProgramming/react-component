@@ -1,0 +1,61 @@
+/* 可滑动进度条 */
+.slidingProgressBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* 滑动收缩区域 */
+/* ------------------------------------------------------------------------------ */
+.slidingProgressBar-slide {
+  width: 280px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #e3e7ed;
+}
+/* 滑动收缩区域 */
+/* ================================================================ */
+.slidingProgressBar-slide-container {
+  width: 0;
+  height: 100%;
+  background-color: #3f9eff;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* 滑动按键 */
+.slidingProgressBar-slide-container-btn {
+  width: 24px;
+  height: 24px;
+  border: solid 3px #3f9eff;
+  border-radius: 50%;
+  position: absolute;
+  right: -12px;
+  background-color: #fff;
+}
+
+/* 数字展示区域 */
+/* ------------------------------------------------------------------------------ */
+.slidingProgressBar-showNum {
+  width: 30px;
+  margin-left: 25px;
+  color: #bfbfbf;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* 禁用时展示内容区域 */
+/* ------------------------------------------------------------------------------ */
+.slidingProgressBar-disabled {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: not-allowed;
+  user-select: none;
+}

@@ -1,0 +1,51 @@
+/* 文字提示弹出框组件 */
+
+.textPrmptPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(50% -50%);
+  z-index: 999;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  display: none;
+  opacity: 0;
+}
+
+/* 组件展示css */
+/* ------------------------------------------------------------------------------ */
+.boxShow {
+  animation-name: open;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+/* 展示动画 */
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 组件关闭css */
+/* ------------------------------------------------------------------------------ */
+.boxHide {
+  animation-name: hide;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+/* 关闭动画 */
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

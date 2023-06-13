@@ -1,0 +1,85 @@
+/* input输入框组件 */
+
+.inputText {
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px 0;
+  border-radius: 5px;
+  width: 240px;
+  overflow: hidden;
+}
+/* 无状态改变时边框状态 */
+.usually {
+  border: 1px solid #cdcdcd;
+}
+/* 获取焦点后的边框状态 */
+.inputFocus {
+  border: 1px solid #1296db;
+}
+/* 移入元素后的边框状态 */
+.mouseOver {
+  border: 1px solid #707070;
+}
+/* 禁用时到状态 */
+.disabled {
+  background-color: #f5f7fa;
+  border: 1px solid #cdcdcd;
+}
+
+/* 左侧icon图标 */
+/* ------------------------------------------------------------------------------ */
+.inputText-icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* input输入框 */
+/* ------------------------------------------------------------------------------ */
+.inputText-input {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.inputText-input > input {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.inputText-input > input::placeholder {
+  color: #cdcdcd;
+}
+
+/* 右侧按键 */
+/* ------------------------------------------------------------------------------ */
+.inputText-bttun {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 禁用遮挡盒子 */
+.disabledBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: not-allowed;
+}

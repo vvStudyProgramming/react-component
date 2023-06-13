@@ -1,0 +1,8 @@
+/* 滑动区块组件 */
+.slidingBlock {
+  width: 375px;
+  height: 400px;
+  overflow-y: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,73 @@
+// 题目按键组件
+
+.topicBtn {
+  width: 5.6rem;
+  height: .96rem ;
+  background: #fff;
+  border: .02rem solid #000;
+  border-radius: 1rem;
+  // font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: .3rem;
+  padding: .28rem;
+  text-align: center;
+  color: #02221f;
+  position: absolute;
+  transform: translateY(50vh);
+  transition-property: all;
+  transition-timing-function: linear;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  animation-name: topicBtnShow;
+  white-space: nowrap;
+
+
+  // 动画名称(导语组件时)
+  @keyframes topicBtnShow {
+
+    0% {
+      transform: translateY(50vh);
+    }
+
+    100% {
+      transform: translateY(0);}
+  }
+
+  // 用于获取默认展示的宽度盒子
+
+  .topicBtnDefault {
+    display: inline-block;
+    width: auto;
+    height: 0 ;
+    overflow: hidden;
+    padding: 0 .28rem;
+    border: .02rem solid #fff;
+  }
+}
+// 排列上方按键样式
+
+.top {
+  top: 0;
+}
+// 排列下方样式
+
+.bottom {
+  bottom: 0;
+}
+
+// 按键选中样式
+
+.choose {
+  border-radius: .48rem 0 .48rem .48rem;
+  transform: translateY(0);
+  margin-bottom: 60px;
+  right: .3rem;
+}
+
+// 消失的动画
+
+.disappear {
+  opacity: 0;
+  transform: translateY(0);
+}

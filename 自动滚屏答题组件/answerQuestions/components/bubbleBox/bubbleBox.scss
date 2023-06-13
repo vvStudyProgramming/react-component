@@ -1,0 +1,87 @@
+// 气泡框组件
+
+.BubbleBox {
+  display: flex;
+  word-wrap: break-word;
+  word-spacing: -1px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .3rem;
+  line-height: .4rem;
+  color: #000;
+  margin-bottom: .18rem;
+  animation-fill-mode: forwards;
+  position: relative;
+
+  // 动画名称(导语组件时)
+  @keyframes shows {
+
+    0% {
+      transform: translateY(50vh);}
+
+    100% {
+      transform: translateY(0);}
+  }
+  
+  // 动画名称(题目组件时)
+  @keyframes topic {
+
+    0% {
+      opacity: 0;
+      transform: translateY(100%);}
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);}
+  }
+
+  // 左侧头像展示部分
+  // ------------------------------------------------------------------------------
+
+  .BubbleBoxAvatar {
+    width: .84rem;
+    height: .84rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: .24rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: -.15rem;
+    left: 0;
+  }
+
+  // 气泡框文字内容部分
+  // ------------------------------------------------------------------------------
+
+  .BubbleBoxFont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .18rem .26rem;
+    box-sizing: border-box;
+    border-radius: 0 .48rem .48rem;
+    background-color: #fff;
+    flex-shrink: 1;
+    border: .02rem solid #000;
+    max-width: 5.70rem;
+    margin-left: 1.08rem;
+  }
+
+  .BubbleBoxAudioBtn {
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+  }
+}
+// 用户名的特色样式
+
+.BubbleBoxFont  span {
+  color: #f00;
+}
+
+// 题目组件时样式
+
+.topicClass {
+  opacity: 0;
+}

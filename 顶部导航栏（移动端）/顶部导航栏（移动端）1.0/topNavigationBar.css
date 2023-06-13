@@ -1,0 +1,91 @@
+/* 顶部导航栏（移动端） */
+.topNavigationBar {
+  width: 100%;
+  height: 46px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* 左边按键区域 */
+/* ------------------------------------------------------------------------------ */
+.topNavigationBar-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 0 0 20px;
+  color: #1296db;
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+}
+/* icon图标 */
+.topNavigationBar-left-icon {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+/* 中间题目 */
+/* ------------------------------------------------------------------------------ */
+.topNavigationBar-title {
+  height: 100%;
+  max-width: 60%;
+  color: #323233;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 右边按键区域 */
+/* ------------------------------------------------------------------------------ */
+.topNavigationBar-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 20px 0 0;
+  color: #1296db;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+}
+/* icon图标 */
+.topNavigationBar-right-icon {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+/* 蒙层样式 */
+/* ------------------------------------------------------------------------------ */
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

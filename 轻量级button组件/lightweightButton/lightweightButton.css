@@ -1,0 +1,17 @@
+/* 轻量级按键组件css */
+
+.components_lightweightButton {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 按键点击时出现的遮挡颜色层 */
+.components_lightweightButton-Occlusion {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}

@@ -1,0 +1,44 @@
+/* 底部导航栏组件 */
+.bottomNavigationBar {
+  width: 100%;
+  height: 46px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 成员外层 */
+/* ------------------------------------------------------------------------------ */
+.bottomNavigationBar-item {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* icon图标 */
+/* ================================================================ */
+.bottomNavigationBar-item-icon {
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3%;
+}
+
+/* 标题 */
+/* ================================================================ */
+.bottomNavigationBar-item-title {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}

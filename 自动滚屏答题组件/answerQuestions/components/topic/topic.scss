@@ -1,0 +1,65 @@
+// 题目组件
+
+.Topic {
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+}
+
+// 题目区域
+// ------------------------------------------------------------------------------
+
+.TopicHead {
+  display: flex;
+  justify-content: center;
+  // align-items: flex-start;
+}
+
+// 内容区域
+// ------------------------------------------------------------------------------
+
+.TopicConst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.25, 0, .25, 1);
+  animation-name: TopicConstShow ;
+  transform: translateY(50vh);
+  opacity: 0;
+  position: relative;
+
+  .TopicConstMask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}
+@keyframes TopicConstShow {
+
+  0% {
+    opacity: 0;
+    transform: translateY(50vh);}
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);}
+}
+// 选项区域
+// ------------------------------------------------------------------------------
+
+.TopicBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: height linear .3s .4s;
+}
+
+.AudioBtn {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}

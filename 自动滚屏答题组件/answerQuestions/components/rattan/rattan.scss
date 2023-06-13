@@ -1,0 +1,84 @@
+// 藤组件
+@import "../../../../constants//image.scss";
+
+.Tattan {
+  width: 100%;
+  height: 6.6rem ;
+  position: absolute;
+  top: 6.6rem;
+  // overflow: hidden; 
+
+
+  // 左上花藤
+  // ------------------------------------------------------------------------------
+
+  .TattanLeftTop {
+    width: .91rem;
+    height: 3.55rem;
+    position: absolute;
+    top: -.4rem;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: url($flowerLeft1);
+    background-repeat: no-repeat;
+    background-position: 0 -.9rem;
+    background-size: cover;
+    transition: all 2s ;
+  }
+
+  // 动画效果
+
+  .openLeftTop {
+    transform: translateX(0);
+  }
+
+  // 左下花藤
+  // ------------------------------------------------------------------------------
+
+  .TattanLeftBottom {
+    width: .95rem;
+    height: 3.49rem;
+    position: absolute;
+    bottom: .6rem;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: url($flowerLeft2);
+    background-repeat: no-repeat;
+    background-position: 0 -1rem;
+    background-size: cover;
+    transition: all  1s ;
+  }
+
+  // 动画效果
+
+  .openLeftBottom {
+    transform: translateX(0);
+
+  }
+
+  // 右花藤
+  // ------------------------------------------------------------------------------
+
+  .TattanRight {
+    width: 1.38rem;
+    height: 5.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    background-image: url($flowerRight);
+    background-repeat: no-repeat;
+    background-position: 0 -1.5rem;
+    background-size: cover;    transition: all 1s ;
+  }
+
+  // 动画效果
+
+  .openRight {
+    transform: translateX(0);
+  }
+}
+
+.smllHead {
+  top: 5.8rem;
+}

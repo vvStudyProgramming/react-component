@@ -1,0 +1,13 @@
+// 引导语组件
+
+.Guide {
+  width: 6.97rem;
+  margin: -.7rem auto auto;
+  position: relative;
+  z-index: 100;
+
+  .GuideFinish {
+    width: 100%;
+    height: 1.86rem;
+  }
+}

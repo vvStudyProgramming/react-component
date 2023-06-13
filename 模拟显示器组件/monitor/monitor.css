@@ -1,0 +1,19 @@
+/* 显示器组件 */
+.components_monitor {
+  display: inline-flex;
+  flex-flow: column wrap;
+  gap: 0.04rem;
+  background-color: #eef0f4;
+}
+
+/* 每列的样式 */
+.components_monitor-portrait {
+  display: flex;
+  gap: inherit;
+}
+
+/* 每个显示点成员样式 */
+.components_monitor-portrait > span {
+  width: 0.4rem;
+  height: 0.4rem;
+}

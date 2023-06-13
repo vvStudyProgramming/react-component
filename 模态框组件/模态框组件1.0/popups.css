@@ -1,0 +1,110 @@
+/* 模态框组件 */
+
+.popus {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+}
+
+/* 左边样式 */
+/* =================================================== */
+.left {
+  align-items: center;
+  justify-content: start;
+}
+
+/* 右边样式 */
+/* =================================================== */
+.right {
+  align-items: center;
+  justify-content: end;
+}
+
+/* 居中样式 */
+/* =================================================== */
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* 上方样式 */
+/* =================================================== */
+.top {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* 下方样式 */
+/* =================================================== */
+.bottom {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* 内容展示区域 */
+/* ------------------------------------------------------------------------------ */
+.popus-item {
+  display: inline-block;
+}
+
+/* 成员左边样式 */
+/* =================================================== */
+.item-left {
+  transform: translateX(-100%);
+}
+
+/* 成员右边样式 */
+/* =================================================== */
+.item-right {
+  transform: translateX(100%);
+}
+
+/* 成员居中样式 */
+/* =================================================== */
+.item-center {
+  transform: scale(1.5);
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+/* 开始展示动画 */
+@keyframes popusItemOpen {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 关闭展示动画 */
+@keyframes popusItemHide {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform:scale(1.5);
+  }
+}
+
+/* 成员上方样式 */
+/* =================================================== */
+.item-top {
+  transform: translateY(-100%);
+}
+
+/* 成员下方样式 */
+/* =================================================== */
+.item-bottom {
+  transform: translateY(100%);
+}

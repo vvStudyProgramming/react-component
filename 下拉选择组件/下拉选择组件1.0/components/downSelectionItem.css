@@ -1,0 +1,24 @@
+/* 渲染隐藏成员组件 */
+
+.downSelectionItem {
+  font-size: 14px;
+  padding: 0 20px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #606266;
+  height: 34px;
+  line-height: 34px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+/* 成员的hover效果样式 */
+.downSelectionItem:hover {
+  background-color: #f5f7fa;
+}
+/* 选中后成员样式 */
+.downSelectionItem-checked {
+  color: #409eff;
+  font-weight: 700;
+}
